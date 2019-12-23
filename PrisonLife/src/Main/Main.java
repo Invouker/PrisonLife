@@ -1,7 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.36
-// 
-
 package Main;
 
 import java.lang.reflect.Field;
@@ -72,26 +68,37 @@ import Solitary.SolitaryControl;
 import Solitary.SolitarySignController;
 import Solitary.solitaryCache;
 import Solitary.solitaryCommands;
-import net.milkbowl.vault.chat.Chat;
+//import net.milkbowl.vault.chat.Chat;
 
 public class Main extends JavaPlugin implements Listener
 {
+	
+	//SERVER CONFIGURATION
     public static final int minimumPointsToWarden = 6700;
     public static final int maximumWConServer = 100;
     public static final int MAX_CELLS = 144;
+    
     public static boolean isSkinsRestorerLoaded;
     public static String mainWorld;
+    
+    //CONFIGS
     private static ConfigListener cell;
     private static ConfigListener lang;
     private static ConfigListener whitelist;
     private static ConfigListener boxes;
+    
+    
     public static HashMap<String, CommandExecutor> commandsExecutor;
     public static HashMap<String, String> commandsDescription;
     public static HashMap<String, ArrayList<String>> commandsAliases;
+    
     public static boolean debug;
     private static Main main;
-    public static Chat chat;
+    
+    //ENCHANTMENTS
     BoxingGloves bg;
+    
+    
     PlayerDataHandler pdh;
     
     static {
@@ -101,7 +108,6 @@ public class Main extends JavaPlugin implements Listener
         Main.commandsDescription = new HashMap<String, String>();
         Main.commandsAliases = new HashMap<String, ArrayList<String>>();
         Main.debug = true;
-        Main.chat = null;
     }
     
     public Main() {
@@ -130,90 +136,90 @@ public class Main extends JavaPlugin implements Listener
     }
     
     public void onEnable() {
-        Main.Chat.print("Â§fPlugin has been Â§aenabled Â§f!");
+        Chat.print("§fPlugin has been §aenabled §f!");
         Main.main = this;
-        Main.Chat.print("Loading Gangs Data to memory...");
-        final GangDataManager gdm = new GangDataManager();
+        Chat.print("Loading Gangs Data to memory...");
+        GangDataManager gdm = new GangDataManager();
         gdm.loadData();
-        Main.Chat.print("Registring all commands ...");
+        Chat.print("Registring all commands ...");
         this.registerCommands();
-        Main.Chat.print("Registring configs...");
+        Chat.print("Registring configs...");
         Main.cell = new ConfigListener(this, "Cells.yml", "Cells.yml");
         Main.lang = new ConfigListener(this, "Lang.yml", "Lang.yml");
         Main.whitelist = new ConfigListener(this, "WhiteList.yml", "WhiteList.yml");
         Main.boxes = new ConfigListener(this, "Boxes.yml", "Boxes.yml");
-        Main.Chat.print("Detectings Plugins:");
+        Chat.print("Detectings Plugins:");
         if (this.getServer().getPluginManager().getPlugin("Citizens") == null) {
-            Main.Chat.print("Server doesnt found a Citizens Plugin!");
+            Chat.print("Server doesnt found a Citizens Plugin!");
             Bukkit.getServer().shutdown();
         }
         else {
-            Main.Chat.print("Citizens plugin has been found and hooked on it!");
+            Chat.print("Citizens plugin has been found and hooked on it!");
         }
         if (this.getServer().getPluginManager().getPlugin("SkinsRestorer") == null) {
-            Main.Chat.print("Server doesnt found a SkinsRestorer Plugin!");
+            Chat.print("Server doesnt found a SkinsRestorer Plugin!");
         }
         else {
             Main.isSkinsRestorerLoaded = true;
-            Main.Chat.print("SkinRestorer plugin has been found and hooked on it!");
+            Chat.print("SkinRestorer plugin has been found and hooked on it!");
         }
-        Main.Chat.print("Registring all events ...");
+        Chat.print("Registring all events ...");
         this.registerEvents();
         if (this.getServer().getPluginManager().getPlugin("Vault") != null) {
-            Main.Chat.print("Vault plugin has been found, and hooked on it!");
-            Main.Chat.setupChat();
+            Chat.print("Vault plugin has been found, and hooked on it!");
+            Chat.setupChat();
         }
         else {
-            Main.Chat.print("Â§cServer doesnt found a Vault Plugin!");
+            Chat.print("§cServer doesnt found a Vault Plugin!");
             Bukkit.getServer().shutdown();
         }
-        Main.Chat.print("Creating timer for DayLight cycle!");
+        Chat.print("Creating timer for DayLight cycle!");
         DayLight.timeTask();
-        Main.Chat.print("Creating timer for player data synchronizing!");
+        Chat.print("Creating timer for player data synchronizing!");
         this.pdh.dataSynchronizing();
-        Main.Chat.print("When server is reloaded, loading cache data ...");
+        Chat.print("When server is reloaded, loading cache data ...");
         for (final Player p : Bukkit.getOnlinePlayers()) {
             this.pdh.loadData(p);
         }
-        Main.Chat.print("Load boxes to cache...");
+        Chat.print("Load boxes to cache...");
         BoxData.loadConfiguration();
-        Main.Chat.print("Loadings ADs / TIPs");
+        Chat.print("Loadings ADs / TIPs");
         AutoMessage.setupAD();
-        Main.Chat.print("Loading white-list data...");
+        Chat.print("Loading white-list data...");
         Maintance.loadWhiteList();
-        Main.Chat.print("Creating timer for Needs-Updater!");
+        Chat.print("Creating timer for Needs-Updater!");
         final NeedsUpdater nu = new NeedsUpdater();
         nu.update();
-        Main.Chat.print("Creating updater for ScoreBoards!");
+        Chat.print("Creating updater for ScoreBoards!");
         final Prisoner psb = new Prisoner();
         psb.updateScoreBoard();
-        Main.Chat.print("Creating timer for ChatReaction");
+        Chat.print("Creating timer for ChatReaction");
         ChatReaction.runChatReaction();
-        Main.Chat.print("Loading Custom Enchantments!");
+        Chat.print("Loading Custom Enchantments!");
         this.LoadEnchantments();
-        Main.Chat.print("Initializing Custom Crafting Recipes!");
+        Chat.print("Initializing Custom Crafting Recipes!");
         final CraftingListener crafListener = new CraftingListener();
         crafListener.createRecipes();
-        Main.Chat.print("Loading solitaries to cache!");
+        Chat.print("Loading solitaries to cache!");
         solitaryCache.loader();
         solitaryCache.dataSynchronizing();
-        Main.Chat.print("Creating cooldown system");
+        Chat.print("Creating cooldown system");
         GangManager.updateCooldown();
         final SolitaryControl scon = new SolitaryControl();
         scon.updateAllSigns();
-        Main.Chat.print("Prison life is fully loaded !");
-        Main.Chat.print("");
-        Main.Chat.print("Â§cPrison Life by XpresS");
-        Main.Chat.print("Date of start creating: 14.11.2017");
-        Main.Chat.print("Planned date of beta: 12.9.2019");
-        Main.Chat.print("Creating with somebreaks and other thinks!");
-        Main.Chat.print("");
-        Main.Chat.print("Love too much wardens!");
-        Main.Chat.print("");
+        Chat.print("Prison life is fully loaded !");
+        Chat.print("");
+        Chat.print("§cPrison Life by XpresS");
+        Chat.print("Date of start creating: 14.11.2017");
+        Chat.print("Planned date of beta: 12.9.2019");
+        Chat.print("Creating with somebreaks and other thinks!");
+        Chat.print("");
+        Chat.print("Love too much wardens!");
+        Chat.print("");
     }
     
     public void onDisable() {
-        Main.Chat.print("Â§cStarting saving data, and restore to default!");
+        Chat.print("§cStarting saving data, and restore to default!");
         for (final Player p : Bukkit.getOnlinePlayers()) {
             Bukkit.getScoreboardManager().getMainScoreboard().getTeam("prison_lobby").addEntry(p.getName());
             if (!Main.debug) {
@@ -234,15 +240,15 @@ public class Main extends JavaPlugin implements Listener
                 this.pdh.getData(p).setSolitary(toDate);
                 scon.removePlayer(p, false);
             }
-            Main.Chat.print("Saving & Unloading players data!");
+            Chat.print("Saving & Unloading players data!");
             this.pdh.saveData(p);
             this.pdh.removePlayer(p);
         }
         GangManager.removeHolograms();
-        Main.Chat.print("Saving Gangs Data...");
+        Chat.print("Saving Gangs Data...");
         final GangDataManager gdm = new GangDataManager();
         gdm.saveData();
-        Main.Chat.print("Unloading enchantments!");
+        Chat.print("Unloading enchantments!");
         this.UnloadEnchantments();
         this.unloadAll();
         for (int id = 0; id < BoxData.boxes.size() - 1; ++id) {
@@ -271,14 +277,14 @@ public class Main extends JavaPlugin implements Listener
                 JoinBoxListener.updateSign(id);
             }
         }
-        Main.Chat.print("Â§fPlugin has been Â§cdisabledÂ§f !");
+        Chat.print("§fPlugin has been §cdisabled§f !");
     }
     
     private void unloadAll() {
         for (int MaxSlots = Bukkit.getServer().getMaxPlayers(), i = 1; i < MaxSlots; ++i) {
             CellAsigner.unloadCellData(i);
         }
-        Main.Chat.print("All has been disabled from PrisonLife Plugin");
+        Chat.print("All has been disabled from PrisonLife Plugin");
     }
     
     private void registerCommands() {
@@ -310,7 +316,7 @@ public class Main extends JavaPlugin implements Listener
         pm.registerEvents((Listener)new ServerListPing(), (Plugin)this);
         pm.registerEvents((Listener)new Join(), (Plugin)this);
         pm.registerEvents((Listener)new Left(), (Plugin)this);
-        pm.registerEvents((Listener)new Main.Chat(), (Plugin)this);
+        pm.registerEvents((Listener)new Chat(), (Plugin)this);
         pm.registerEvents((Listener)new SignListener(), (Plugin)this);
         pm.registerEvents((Listener)new NPCListener(), (Plugin)this);
         pm.registerEvents((Listener)new ChoosedTeam(), (Plugin)this);

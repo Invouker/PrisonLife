@@ -4,28 +4,28 @@
 
 package Jobs.Washing;
 
-import org.bukkit.Rotation;
-import org.bukkit.plugin.Plugin;
-import Main.Main;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.event.EventHandler;
-import java.util.Iterator;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.Color;
+import org.bukkit.Material;
+import org.bukkit.Rotation;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.ItemFrame;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.EquipmentSlot;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
+
 import Items.ItemBuilder;
 import Main.Chat;
-import org.bukkit.entity.ItemFrame;
-import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Entity;
-import org.bukkit.block.BlockFace;
-import org.bukkit.Material;
-import org.bukkit.event.block.Action;
-import org.bukkit.inventory.EquipmentSlot;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.scheduler.BukkitTask;
-import org.bukkit.event.Listener;
+import Main.Main;
 
 public class WashingMachine implements Listener
 {
@@ -108,7 +108,7 @@ public class WashingMachine implements Listener
     
     public void updator(final Player p, final Block b) {
         new BukkitRunnable() {
-            Block carpet = val$b.getRelative(BlockFace.UP);
+            Block carpet = b.getRelative(BlockFace.UP);
             int time = 10;
             
             public void run() {

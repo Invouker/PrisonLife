@@ -4,26 +4,27 @@
 
 package Main;
 
-import org.bukkit.event.EventHandler;
-import Player.Premium.PremiumType;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
 import java.util.ArrayList;
-import org.bukkit.plugin.RegisteredServiceProvider;
-import Gangs.Gang;
-import org.bukkit.command.CommandSender;
 import java.util.List;
-import java.util.Iterator;
-import org.bukkit.entity.Player;
+
 import org.bukkit.Bukkit;
-import Player.Data.PlayerDataHandler;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.plugin.RegisteredServiceProvider;
+
+import Gangs.Gang;
+import Player.Data.PlayerDataHandler;
+import Player.Premium.PremiumType;
 
 public class Chat implements Listener
 {
     static PlayerDataHandler pdh;
-    private static final String prefix = "Â§ePrison Â§8Â»Â§7 ";
-    private static final String gangPrefix = "Â§c[Â§lGANGÂ§c]Â§7 ";
-    private static final String cprefix = "Â§ePrison Â§8>>Â§f";
+    private static final String prefix = "§ePrison §8»§7 ";
+    private static final String gangPrefix = "§c[§lGANG§c]§7 ";
+    private static final String cprefix = "§ePrison §8>>§f";
     private static net.milkbowl.vault.chat.Chat chat;
     
     static {
@@ -40,7 +41,7 @@ public class Chat implements Listener
         final List<String> iterate = getTList(source, p, new String[0]);
         for (final String s : iterate) {
             if (p instanceof Player) {
-                p.sendMessage("Â§ePrison Â§8Â»Â§7 " + s);
+                p.sendMessage("§ePrison §8»§7 " + s);
             }
             else {
                 print(s);
@@ -51,7 +52,7 @@ public class Chat implements Listener
     public static void send(final Player p, final String source, final String... string) {
         final String translated = getT(source, p, string);
         if (p instanceof Player) {
-            p.sendMessage("Â§ePrison Â§8Â»Â§7 " + translated);
+            p.sendMessage(prefix + translated);
         }
         else {
             print(translated);
@@ -61,16 +62,16 @@ public class Chat implements Listener
     public static void sendAll(final String source, final String... string) {
         for (final Player p : Bukkit.getServer().getOnlinePlayers()) {
             final String translated = getT(source, p, string);
-            p.sendMessage("Â§ePrison Â§8Â»Â§7 " + translated);
+            p.sendMessage(prefix + translated);
         }
     }
     
     public static void print(final String msg) {
-        Bukkit.getServer().getConsoleSender().sendMessage("Â§ePrison Â§8>>Â§f" + msg);
+        Bukkit.getServer().getConsoleSender().sendMessage(cprefix + msg);
     }
     
     public static void info(final Player p, final String msg) {
-        p.sendMessage("Â§ePrison Â§8Â»Â§7 " + msg);
+        p.sendMessage(prefix + msg);
     }
     
     public static void infoSender(final CommandSender sender, final String msg) {
@@ -81,18 +82,18 @@ public class Chat implements Listener
         for (final String player : gang.getPlayers()) {
             final Player target = Bukkit.getPlayer(player);
             if (target != null) {
-                target.sendMessage("Â§c[Â§lGANGÂ§c]Â§7 " + message);
+                target.sendMessage(gangPrefix + message);
             }
         }
         final Player founder = Bukkit.getPlayer(gang.getFounder());
         if (founder != null) {
-            founder.sendMessage("Â§c[Â§lGANGÂ§c]Â§7 " + message);
+            founder.sendMessage(gangPrefix + message);
         }
     }
     
     public static void noPerm(final Player p) {
         final String translated = getT("no-permissions", p, new String[0]);
-        p.sendMessage("Â§ePrison Â§8Â»Â§7 " + translated);
+        p.sendMessage(prefix + translated);
     }
     
     public static boolean setupChat() {
@@ -107,10 +108,10 @@ public class Chat implements Listener
         final String lang = Chat.pdh.getData(p).getLang().getInShort().toLowerCase();
         String returned = Main.getLang().getString(String.valueOf(lang) + "." + source);
         try {
-            returned = returned.replaceAll("&", "Â§");
+            returned = returned.replaceAll("&", "§");
         }
         catch (NullPointerException ignore) {
-            print("Â§4ERROR Â§cChat error - Source: " + lang + "." + source + ", Player: " + p.getName());
+            print("§4ERROR §cChat error - Source: " + lang + "." + source + ", Player: " + p.getName());
             return "";
         }
         int i = 1;
@@ -128,7 +129,7 @@ public class Chat implements Listener
         List<String> returned = new ArrayList<String>();
         returned = (List<String>)Main.getLang().getStringList(String.valueOf(lang) + "." + source);
         if (returned == null) {
-            print("Â§4ERROR Â§cChat error - Source:" + source + " Player: " + p.getName());
+            print("§4ERROR §cChat error - Source:" + source + " Player: " + p.getName());
         }
         int i = 1;
         for (final String s : strings) {
@@ -143,7 +144,7 @@ public class Chat implements Listener
     }
     
     public String getFormated(final Player p, final String text) {
-        return String.valueOf(this.getClass(p)) + "Â§f" + p.getName() + " " + this.getGroup(p) + " Â§8Â» Â§f" + text;
+        return String.valueOf(this.getClass(p)) + "§f" + p.getName() + " " + this.getGroup(p) + " §8» §f" + text;
     }
     
     @EventHandler
@@ -152,7 +153,7 @@ public class Chat implements Listener
         String msg = e.getMessage();
         final PremiumType pType = Chat.pdh.getData(p).getPremium();
         if (pType == PremiumType.MASTER || pType == PremiumType.LEGION) {
-            msg = msg.replaceAll("&", "Â§");
+            msg = msg.replaceAll("&", "§");
         }
         final String msg2 = msg.replaceAll("%", "%%");
         print("CLASS: " + this.getClass(p) + " TYPE: " + Chat.pdh.getData(p).getType().getName());
@@ -163,45 +164,45 @@ public class Chat implements Listener
         String Class = "";
         final PrisonType type = Chat.pdh.getData(p).getType();
         if (type == PrisonType.PRISONER) {
-            Class = "Â§eÂ§lPrisoner ";
+            Class = "§e§lPrisoner ";
         }
         if (type == PrisonType.WARDEN) {
-            Class = "Â§9Â§lWarden ";
+            Class = "§9§lWarden ";
         }
         if (type == PrisonType.ADMIN) {
-            Class = "Â§cÂ§lAdmin ";
+            Class = "§c§lAdmin ";
         }
         return Class;
     }
     
     public String getGroup(final Player p) {
         final String group = Chat.chat.getPrimaryGroup(p);
-        String rgroup = "Â§cN";
+        String rgroup = "§cN";
         if (group == null || group.isEmpty()) {
-            return rgroup = "Â§7P";
+            return rgroup = "§7P";
         }
         if (group.equalsIgnoreCase("default") || group.equalsIgnoreCase("Player")) {
-            rgroup = "Â§7P";
+            rgroup = "§7P";
         }
         if (group.equalsIgnoreCase("Support")) {
-            rgroup = "Â§bÂ§lS";
+            rgroup = "§b§lS";
         }
         if (group.equalsIgnoreCase("Builder")) {
-            rgroup = "Â§aÂ§lB";
+            rgroup = "§a§lB";
         }
         if (group.equalsIgnoreCase("Moderator")) {
-            rgroup = "Â§3Â§lM";
+            rgroup = "§3§lM";
         }
         if (group.equalsIgnoreCase("Developer")) {
-            rgroup = "Â§6Â§lD";
+            rgroup = "§6§lD";
         }
         if (group.equalsIgnoreCase("Admin")) {
-            rgroup = "Â§3Â§lA";
+            rgroup = "§3§lA";
         }
         if (group.equalsIgnoreCase("Leader")) {
-            rgroup = "Â§9Â§lL";
+            rgroup = "§9§lL";
         }
-        return String.valueOf(rgroup) + "Â§f";
+        return String.valueOf(rgroup) + "§f";
     }
     
     public static String getException(final int ex, final int line, final Class<?> c) {
