@@ -4,15 +4,16 @@
 
 package DayLightCycle;
 
-import org.bukkit.Sound;
-import org.bukkit.block.data.BlockData;
-import org.bukkit.block.Block;
-import org.bukkit.World;
-import org.bukkit.block.data.Openable;
-import org.bukkit.Location;
-import Main.Main;
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Sound;
+import org.bukkit.World;
+import org.bukkit.block.Block;
+import org.bukkit.block.data.BlockData;
+import org.bukkit.block.data.Openable;
+
 import Cells.CellDataProvider;
+import Main.Main;
 
 public class NightDoorControl implements DoorControls
 {

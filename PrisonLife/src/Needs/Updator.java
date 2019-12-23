@@ -4,33 +4,34 @@
 
 package Needs;
 
-import java.util.Iterator;
-import org.bukkit.Location;
+import java.util.ArrayList;
+import java.util.Random;
+
 import org.bukkit.Bukkit;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.potion.PotionType;
-import org.bukkit.inventory.meta.PotionMeta;
-import org.bukkit.event.player.PlayerItemConsumeEvent;
+import org.bukkit.GameMode;
+import org.bukkit.Location;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.player.PlayerBedLeaveEvent;
+import org.bukkit.event.player.PlayerItemConsumeEvent;
+import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.PotionMeta;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-import org.bukkit.event.player.PlayerBedLeaveEvent;
-import java.util.Random;
-import org.bukkit.plugin.Plugin;
-import Main.Main;
+import org.bukkit.potion.PotionType;
 import org.bukkit.scheduler.BukkitRunnable;
-import Main.Chat;
-import Main.ZoneVector;
-import Main.PrisonType;
-import org.bukkit.GameMode;
-import org.bukkit.event.player.PlayerMoveEvent;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.scheduler.BukkitTask;
-import org.bukkit.entity.Player;
-import java.util.ArrayList;
+
+import Main.Chat;
+import Main.Main;
+import Main.PrisonType;
+import Main.ZoneVector;
 import Player.Data.PlayerDataHandler;
-import org.bukkit.event.Listener;
 
 public class Updator implements Listener
 {

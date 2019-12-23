@@ -4,17 +4,18 @@
 
 package Listeners;
 
-import org.bukkit.event.EventHandler;
-import org.bukkit.block.data.BlockData;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
-import org.bukkit.block.data.Lightable;
 import org.bukkit.Material;
-import org.bukkit.event.block.Action;
-import Main.PrisonType;
-import org.bukkit.event.player.PlayerInteractEvent;
-import Player.Data.PlayerDataHandler;
+import org.bukkit.block.Block;
+import org.bukkit.block.data.BlockData;
+import org.bukkit.block.data.Lightable;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
+
+import Main.PrisonType;
+import Player.Data.PlayerDataHandler;
 
 public class PoweredRedstoneLamp implements Listener
 {

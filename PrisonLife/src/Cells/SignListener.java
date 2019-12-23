@@ -4,34 +4,35 @@
 
 package Cells;
 
-import fr.minuskube.inv.ClickableItem;
-import Items.ItemBuilder;
-import fr.minuskube.inv.content.InventoryProvider;
-import org.bukkit.Material;
-import org.bukkit.event.block.Action;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.inventory.InventoryType;
-import fr.minuskube.inv.InventoryManager;
-import fr.minuskube.inv.content.InventoryContents;
-import org.bukkit.inventory.InventoryHolder;
-import fr.minuskube.inv.SmartInvsPlugin;
-import org.bukkit.inventory.Inventory;
-import fr.minuskube.inv.SmartInventory;
-import org.bukkit.block.BlockState;
-import org.bukkit.block.Block;
-import org.bukkit.World;
-import org.bukkit.block.Sign;
-import Main.Main;
 import org.bukkit.Bukkit;
-import org.bukkit.event.EventHandler;
 import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.World;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockState;
+import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
-import Utils.Functions;
-import org.bukkit.event.block.SignChangeEvent;
-import Main.Chat;
-import Player.Data.PlayerDataHandler;
-import fr.minuskube.inv.opener.InventoryOpener;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.block.SignChangeEvent;
+import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
+
+import Items.ItemBuilder;
+import Main.Chat;
+import Main.Main;
+import Player.Data.PlayerDataHandler;
+import Utils.Functions;
+import fr.minuskube.inv.ClickableItem;
+import fr.minuskube.inv.InventoryManager;
+import fr.minuskube.inv.SmartInventory;
+import fr.minuskube.inv.SmartInvsPlugin;
+import fr.minuskube.inv.content.InventoryContents;
+import fr.minuskube.inv.content.InventoryProvider;
+import fr.minuskube.inv.opener.InventoryOpener;
 
 public class SignListener implements Listener, InventoryOpener
 {

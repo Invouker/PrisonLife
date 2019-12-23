@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/SkinsRestorer.jar"/>
 	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/SmartInvs-1.2.6.jar"/>
 	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/Vault.jar"/>
+	<classpathentry kind="lib" path="C:/Users/GB-PC/Desktop/lombok.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -4,12 +4,13 @@
 
 package Events;
 
-import Player.Data.PlayerDataHandler;
-import org.bukkit.event.HandlerList;
-import Main.PrisonType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
+import org.bukkit.event.HandlerList;
+
+import Main.PrisonType;
+import Player.Data.PlayerDataHandler;
 
 public class ChooseTeamEvent extends Event implements Cancellable
 {

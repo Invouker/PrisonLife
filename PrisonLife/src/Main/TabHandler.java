@@ -4,17 +4,19 @@
 
 package Main;
 
-import io.netty.buffer.ByteBuf;
-import net.minecraft.server.v1_14_R1.EntityPlayer;
 import java.io.IOException;
-import net.minecraft.server.v1_14_R1.Packet;
-import net.minecraft.server.v1_14_R1.IChatBaseComponent;
-import net.minecraft.server.v1_14_R1.PacketPlayOutPlayerListHeaderFooter;
-import net.minecraft.server.v1_14_R1.PacketDataSerializer;
-import io.netty.buffer.ByteBufAllocator;
+
 import org.bukkit.Bukkit;
 import org.bukkit.craftbukkit.v1_14_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
+
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBufAllocator;
+import net.minecraft.server.v1_14_R1.EntityPlayer;
+import net.minecraft.server.v1_14_R1.IChatBaseComponent;
+import net.minecraft.server.v1_14_R1.Packet;
+import net.minecraft.server.v1_14_R1.PacketDataSerializer;
+import net.minecraft.server.v1_14_R1.PacketPlayOutPlayerListHeaderFooter;
 
 public class TabHandler
 {

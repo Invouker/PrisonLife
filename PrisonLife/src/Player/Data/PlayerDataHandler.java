@@ -4,18 +4,19 @@
 
 package Player.Data;
 
-import java.sql.ResultSet;
 import java.sql.PreparedStatement;
-import Main.Chat;
+import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.bukkit.plugin.Plugin;
-import java.util.Iterator;
-import org.bukkit.Bukkit;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.entity.Player;
 import java.util.HashMap;
-import Main.MySQL;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import Main.Chat;
 import Main.Main;
+import Main.MySQL;
 
 public class PlayerDataHandler
 {

@@ -4,18 +4,18 @@
 
 package Gangs;
 
-import java.util.List;
-import org.bukkit.Location;
-import org.bukkit.Bukkit;
-import Main.Chat;
-import org.bukkit.plugin.Plugin;
-import Main.Main;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.configuration.file.FileConfiguration;
-import java.util.Iterator;
-import Gangs.Ranks.GangRanks;
 import java.util.ArrayList;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import Gangs.Ranks.GangRanks;
+import Main.Chat;
 import Main.Configs;
+import Main.Main;
 
 public class GangDataManager
 {

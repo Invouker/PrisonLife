@@ -4,12 +4,13 @@
 
 package Main;
 
-import java.sql.ResultSet;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException;
-import java.sql.DriverManager;
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException;
 
 public class MySQL
 {

@@ -4,28 +4,29 @@
 
 package Gui;
 
-import org.bukkit.event.inventory.InventoryClickEvent;
 import java.util.Iterator;
-import Player.Data.PlayerData;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.Statistic;
-import Utils.Functions;
-import Items.ItemBuilder;
-import org.bukkit.Material;
-import fr.minuskube.inv.ClickableItem;
-import Items.ITEMS;
-import Player.Data.PlayerDataHandler;
-import org.bukkit.event.inventory.InventoryType;
-import fr.minuskube.inv.InventoryManager;
-import fr.minuskube.inv.content.InventoryContents;
-import org.bukkit.inventory.InventoryHolder;
+
 import org.bukkit.Bukkit;
-import fr.minuskube.inv.SmartInvsPlugin;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.ChatColor;
-import fr.minuskube.inv.content.InventoryProvider;
-import fr.minuskube.inv.SmartInventory;
+import org.bukkit.Material;
+import org.bukkit.Statistic;
 import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.inventory.ItemStack;
+
+import Items.ITEMS;
+import Items.ItemBuilder;
+import Player.Data.PlayerData;
+import Player.Data.PlayerDataHandler;
+import Utils.Functions;
+import fr.minuskube.inv.ClickableItem;
+import fr.minuskube.inv.InventoryManager;
+import fr.minuskube.inv.SmartInventory;
+import fr.minuskube.inv.SmartInvsPlugin;
+import fr.minuskube.inv.content.InventoryContents;
+import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.opener.InventoryOpener;
 
 public class PlayerGUI implements InventoryOpener

@@ -4,28 +4,28 @@
 
 package Listeners;
 
-import java.util.Iterator;
 import java.util.List;
-import org.bukkit.inventory.ItemStack;
-import Items.LoadItem;
-import org.bukkit.inventory.InventoryHolder;
-import org.bukkit.inventory.Inventory;
-import Items.SaveItem;
-import org.bukkit.plugin.java.JavaPlugin;
-import Main.ConfigListener;
-import org.bukkit.event.inventory.InventoryCloseEvent;
-import org.bukkit.event.EventHandler;
+
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
-import Main.Chat;
-import org.bukkit.Bukkit;
 import org.bukkit.block.Chest;
-import org.bukkit.event.block.Action;
-import org.bukkit.event.player.PlayerInteractEvent;
-import Cells.CellDataProvider;
-import Main.Main;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.inventory.InventoryCloseEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.inventory.ItemStack;
+
+import Cells.CellDataProvider;
+import Items.LoadItem;
+import Items.SaveItem;
+import Main.Chat;
+import Main.ConfigListener;
+import Main.Main;
 
 public class CellChestListener implements Listener
 {

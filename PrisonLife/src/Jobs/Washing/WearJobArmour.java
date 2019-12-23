@@ -4,12 +4,13 @@
 
 package Jobs.Washing;
 
-import org.bukkit.event.EventHandler;
-import Main.Chat;
-import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryType;
+
+import Main.Chat;
 
 public class WearJobArmour implements Listener
 {

@@ -4,9 +4,10 @@
 
 package Gangs.Ranks;
 
-import Gangs.GangDataManager;
 import org.bukkit.entity.Player;
+
 import Gangs.Gang;
+import Gangs.GangDataManager;
 
 public class Moderator implements GRanks
 {

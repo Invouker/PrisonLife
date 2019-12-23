@@ -4,8 +4,9 @@
 
 package Abilities;
 
-import Main.Chat;
 import org.bukkit.entity.Player;
+
+import Main.Chat;
 import Player.Data.PlayerDataHandler;
 
 public class StaminaLevel

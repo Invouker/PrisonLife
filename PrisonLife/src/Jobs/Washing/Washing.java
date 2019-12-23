@@ -4,11 +4,12 @@
 
 package Jobs.Washing;
 
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.block.Block;
-import java.util.HashMap;
-import org.bukkit.entity.Player;
 import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.bukkit.block.Block;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 
 public class Washing
 {

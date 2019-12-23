@@ -4,26 +4,26 @@
 
 package DayLightCycle;
 
-import org.bukkit.block.data.BlockData;
-import org.bukkit.Sound;
-import org.bukkit.block.data.type.Door;
-import org.bukkit.plugin.Plugin;
-import org.bukkit.block.BlockState;
-import org.bukkit.block.Block;
-import java.util.Iterator;
-import Main.PrisonType;
-import org.bukkit.block.data.Openable;
-import org.bukkit.Material;
-import org.bukkit.Location;
-import Main.Chat;
-import Main.ZoneVector;
-import org.bukkit.entity.Player;
-import Main.Main;
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.Sound;
 import org.bukkit.World;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockState;
+import org.bukkit.block.data.BlockData;
+import org.bukkit.block.data.Openable;
+import org.bukkit.block.data.type.Door;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
-import Player.Data.PlayerDataHandler;
+
 import Cells.CellDataProvider;
+import Main.Chat;
+import Main.Main;
+import Main.PrisonType;
+import Main.ZoneVector;
+import Player.Data.PlayerDataHandler;
 
 public class CloseCell
 {

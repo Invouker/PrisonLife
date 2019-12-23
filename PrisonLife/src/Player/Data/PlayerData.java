@@ -5,10 +5,11 @@
 package Player.Data;
 
 import org.bukkit.Bukkit;
-import Utils.Lang;
+import org.bukkit.entity.Player;
+
 import Main.PrisonType;
 import Player.Premium.PremiumType;
-import org.bukkit.entity.Player;
+import Utils.Lang;
 
 public class PlayerData
 {

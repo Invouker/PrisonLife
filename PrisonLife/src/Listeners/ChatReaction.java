@@ -4,20 +4,21 @@
 
 package Listeners;
 
-import java.util.Random;
-import org.bukkit.plugin.Plugin;
-import Main.Main;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.event.EventHandler;
-import java.util.Iterator;
-import org.bukkit.entity.Player;
-import org.bukkit.Bukkit;
-import Main.PrisonType;
 import java.util.Calendar;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.scheduler.BukkitTask;
-import Player.Data.PlayerDataHandler;
+import java.util.Random;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
+
+import Main.Main;
+import Main.PrisonType;
+import Player.Data.PlayerDataHandler;
 
 public class ChatReaction implements Listener
 {

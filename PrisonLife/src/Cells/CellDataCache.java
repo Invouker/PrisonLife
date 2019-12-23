@@ -4,8 +4,9 @@
 
 package Cells;
 
-import Main.Chat;
 import java.util.HashMap;
+
+import Main.Chat;
 
 public class CellDataCache
 {

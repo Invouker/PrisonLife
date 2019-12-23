@@ -4,29 +4,30 @@
 
 package Listeners;
 
+import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
-import Gui.BlueprintGUI;
+import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.GameMode;
-import Main.PrisonType;
-import Utils.Functions;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.enchantments.Enchantment;
-import Items.ItemBuilder;
-import org.bukkit.Material;
-import Items.Enchantments.Enchantments;
-import org.bukkit.inventory.InventoryHolder;
-import org.bukkit.Bukkit;
-import Main.Chat;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.entity.Player;
+import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.NamespacedKey;
+
+import Gui.BlueprintGUI;
+import Items.ItemBuilder;
 import Items.Enchantments.BoxingGloves;
-import Player.Data.PlayerDataHandler;
+import Items.Enchantments.Enchantments;
+import Main.Chat;
 import Main.Main;
-import org.bukkit.event.Listener;
+import Main.PrisonType;
+import Player.Data.PlayerDataHandler;
+import Utils.Functions;
 
 public class BlueprintInventory implements Listener
 {

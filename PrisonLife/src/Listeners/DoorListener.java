@@ -4,21 +4,22 @@
 
 package Listeners;
 
-import org.bukkit.event.EventHandler;
-import org.bukkit.Location;
-import org.bukkit.material.MaterialData;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
 import org.bukkit.GameMode;
-import Main.Chat;
-import Main.PrisonType;
-import org.bukkit.block.BlockFace;
-import org.bukkit.material.Door;
+import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.material.Door;
+import org.bukkit.material.MaterialData;
+
+import Main.Chat;
+import Main.PrisonType;
 import Player.Data.PlayerDataHandler;
-import org.bukkit.event.Listener;
 
 public class DoorListener implements Listener
 {

@@ -5,28 +5,29 @@
 package Listeners;
 
 import java.util.Random;
-import skinsrestorer.bukkit.SkinsRestorer;
-import org.bukkit.event.EventHandler;
-import org.bukkit.inventory.ItemStack;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
-import Items.LoadItem;
-import org.bukkit.plugin.java.JavaPlugin;
-import Main.ConfigListener;
-import org.bukkit.OfflinePlayer;
-import org.bukkit.Location;
-import org.bukkit.Bukkit;
-import Cells.CellAsigner;
-import ScoreBoard.Prisoner;
-import Main.PrisonType;
-import Main.Chat;
-import Solitary.SolitaryControl;
-import Events.ChooseTeamEvent;
-import Main.Main;
-import Player.Data.PlayerDataHandler;
-import Needs.NeedsUpdater;
-import Cells.CellDataProvider;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.inventory.ItemStack;
+
+import Cells.CellAsigner;
+import Cells.CellDataProvider;
+import Events.ChooseTeamEvent;
+import Items.LoadItem;
+import Main.Chat;
+import Main.ConfigListener;
+import Main.Main;
+import Main.PrisonType;
+import Needs.NeedsUpdater;
+import Player.Data.PlayerDataHandler;
+import ScoreBoard.Prisoner;
+import Solitary.SolitaryControl;
+import skinsrestorer.bukkit.SkinsRestorer;
 
 public class ChoosedTeam implements Listener
 {

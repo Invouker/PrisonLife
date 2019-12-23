@@ -4,8 +4,9 @@
 
 package Gangs.Ranks;
 
-import Gangs.Gang;
 import org.bukkit.entity.Player;
+
+import Gangs.Gang;
 
 public class Founder implements GRanks
 {

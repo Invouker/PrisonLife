@@ -4,19 +4,16 @@
 
 package Gangs;
 
-import java.util.Iterator;
-import Gangs.Ranks.GangRanks;
-import java.util.HashMap;
-import java.util.List;
-import Utils.Functions;
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+import Main.Chat;
 import Main.PrisonType;
 import Player.Data.PlayerDataHandler;
-import org.bukkit.Bukkit;
-import Main.Chat;
-import org.bukkit.entity.Player;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.command.CommandExecutor;
+import Utils.Functions;
 
 public class GangCommands implements CommandExecutor
 {

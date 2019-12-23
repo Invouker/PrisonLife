@@ -4,16 +4,17 @@
 
 package ScoreBoard;
 
-import org.bukkit.scoreboard.Team;
-import org.bukkit.plugin.Plugin;
-import Main.Main;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.ChatColor;
-import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
+import org.bukkit.scoreboard.Team;
+
+import Main.Main;
 
 public class GuardScoreBoard
 {

@@ -4,12 +4,12 @@
 
 package Main;
 
-import java.util.Iterator;
-import org.bukkit.configuration.file.YamlConfiguration;
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
+
 import org.bukkit.configuration.file.FileConfiguration;
-import java.io.File;
+import org.bukkit.configuration.file.YamlConfiguration;
 
 public class Configs
 {

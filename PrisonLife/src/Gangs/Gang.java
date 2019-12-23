@@ -4,10 +4,12 @@
 
 package Gangs;
 
-import Gangs.Ranks.GangRanks;
 import java.util.HashMap;
 import java.util.List;
+
 import org.bukkit.Location;
+
+import Gangs.Ranks.GangRanks;
 
 public class Gang
 {

@@ -4,12 +4,14 @@
 
 package Solitary;
 
+import java.util.HashMap;
+
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
+
 import Main.Chat;
 import Main.Main;
-import org.bukkit.scheduler.BukkitTask;
-import java.util.HashMap;
 
 public class solitaryCache
 {

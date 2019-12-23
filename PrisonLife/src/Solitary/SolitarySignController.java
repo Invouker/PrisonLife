@@ -4,22 +4,23 @@
 
 package Solitary;
 
-import org.bukkit.inventory.Inventory;
-import org.bukkit.block.BlockState;
-import Items.ItemBuilder;
-import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.Bukkit;
-import org.bukkit.event.block.Action;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.EventHandler;
+import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockState;
+import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.block.SignChangeEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
+
+import Items.ItemBuilder;
 import Main.Chat;
 import Utils.Functions;
-import org.bukkit.Material;
-import org.bukkit.block.Sign;
-import org.bukkit.event.block.SignChangeEvent;
-import org.bukkit.event.Listener;
 
 public class SolitarySignController implements Listener
 {

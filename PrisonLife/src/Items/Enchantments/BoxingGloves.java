@@ -4,18 +4,19 @@
 
 package Items.Enchantments;
 
-import org.bukkit.enchantments.EnchantmentTarget;
-import org.bukkit.event.EventHandler;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.entity.Player;
-import Main.Chat;
-import Listeners.CraftingListener;
 import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.enchantments.EnchantmentTarget;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.NamespacedKey;
-import org.bukkit.event.Listener;
-import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemStack;
+
+import Listeners.CraftingListener;
+import Main.Chat;
 
 public class BoxingGloves extends Enchantment implements Listener
 {

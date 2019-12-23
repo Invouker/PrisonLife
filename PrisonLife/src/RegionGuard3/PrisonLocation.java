@@ -4,19 +4,20 @@
 
 package RegionGuard3;
 
-import org.bukkit.event.EventHandler;
-import org.bukkit.Location;
-import org.bukkit.entity.Player;
-import Main.Chat;
-import org.bukkit.event.block.Action;
-import org.bukkit.Material;
-import Main.PrisonType;
 import org.bukkit.GameMode;
-import Player.Data.PlayerDataHandler;
-import org.bukkit.event.player.PlayerInteractEvent;
-import Cells.CellDataProvider;
-import Main.PlayerDataListener;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
+
+import Cells.CellDataProvider;
+import Main.Chat;
+import Main.PlayerDataListener;
+import Main.PrisonType;
+import Player.Data.PlayerDataHandler;
 
 public class PrisonLocation implements Listener
 {

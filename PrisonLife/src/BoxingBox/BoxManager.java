@@ -4,13 +4,14 @@
 
 package BoxingBox;
 
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import Main.Chat;
 import Main.Main;
 import Main.PlayerFreezing;
-import Main.Chat;
-import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.Bukkit;
 
 public class BoxManager
 {

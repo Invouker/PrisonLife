@@ -4,14 +4,14 @@
 
 package Main;
 
-import org.bukkit.plugin.Plugin;
-import java.util.Iterator;
-import java.util.Random;
-import org.bukkit.entity.Player;
-import org.bukkit.Bukkit;
-import org.bukkit.scheduler.BukkitRunnable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
 
 public class AutoMessage
 {

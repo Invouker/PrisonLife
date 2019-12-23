@@ -5,28 +5,30 @@
 package Basketball;
 
 import java.util.HashSet;
-import org.bukkit.block.BlockFace;
-import org.bukkit.Material;
-import org.bukkit.event.entity.EntityDamageEvent;
-import org.bukkit.event.EventPriority;
-import org.bukkit.entity.EntityType;
-import org.bukkit.event.entity.EntityTargetEvent;
-import org.bukkit.event.EventHandler;
-import org.bukkit.entity.Entity;
-import org.bukkit.Location;
-import Main.ZoneVector;
-import Main.Chat;
+
 import org.bukkit.GameMode;
-import Main.PrisonType;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.block.BlockFace;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
+import org.bukkit.entity.Slime;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.EntityTargetEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
-import org.bukkit.entity.Slime;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.entity.Player;
-import Player.Data.PlayerDataHandler;
+
+import Main.Chat;
 import Main.Main;
-import org.bukkit.event.Listener;
+import Main.PrisonType;
+import Main.ZoneVector;
+import Player.Data.PlayerDataHandler;
 
 public class HitHandler implements Listener
 {

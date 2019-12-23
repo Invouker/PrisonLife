@@ -4,15 +4,16 @@
 
 package Cells;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.World;
+import org.bukkit.block.Block;
+import org.bukkit.block.Chest;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.block.Block;
-import org.bukkit.World;
+
 import Main.Chat;
-import org.bukkit.Material;
-import org.bukkit.block.Chest;
-import org.bukkit.Location;
-import org.bukkit.Bukkit;
 import Main.ConfigListener;
 
 public class PrisonChestHandler

@@ -4,11 +4,13 @@
 
 package Solitary;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Bukkit;
-import java.sql.ResultSet;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+
 import Main.MySQL;
 
 public class SolitaryData

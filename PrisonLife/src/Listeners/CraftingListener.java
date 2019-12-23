@@ -4,24 +4,23 @@
 
 package Listeners;
 
-import org.bukkit.plugin.java.JavaPlugin;
-import Main.ConfigListener;
-import org.bukkit.event.EventHandler;
-import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.PrepareItemCraftEvent;
-import Items.RecipeBuilder;
 import org.bukkit.Bukkit;
-import org.bukkit.inventory.ItemFlag;
-import Items.ItemRarity;
-import org.bukkit.enchantments.Enchantment;
-import Items.ItemBuilder;
 import org.bukkit.Material;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.NamespacedKey;
-import Main.Main;
-import org.bukkit.inventory.ItemStack;
-import Items.Enchantments.BoxingGloves;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.PrepareItemCraftEvent;
+import org.bukkit.inventory.ItemFlag;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
+
+import Items.ItemBuilder;
+import Items.ItemRarity;
+import Items.RecipeBuilder;
+import Items.Enchantments.BoxingGloves;
+import Main.ConfigListener;
+import Main.Main;
 
 public class CraftingListener implements Listener
 {

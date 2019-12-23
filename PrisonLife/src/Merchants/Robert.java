@@ -4,14 +4,15 @@
 
 package Merchants;
 
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.event.EventHandler;
-import org.bukkit.entity.Villager;
-import org.bukkit.event.player.PlayerInteractEntityEvent;
 import java.util.ArrayList;
-import org.bukkit.inventory.MerchantRecipe;
 import java.util.List;
+
+import org.bukkit.entity.Villager;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.MerchantRecipe;
 
 public class Robert implements Listener
 {

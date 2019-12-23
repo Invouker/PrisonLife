@@ -5,6 +5,7 @@
 package Cells;
 
 import org.bukkit.inventory.ItemStack;
+
 import Main.Main;
 
 public class CellDataProvider

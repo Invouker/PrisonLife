@@ -5,12 +5,13 @@
 package Commands;
 
 import org.bukkit.Bukkit;
-import Main.Chat;
 import org.bukkit.GameMode;
-import org.bukkit.entity.Player;
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
 import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+import Main.Chat;
 
 public class gamemodes implements CommandExecutor
 {

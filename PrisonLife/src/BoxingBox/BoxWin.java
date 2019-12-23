@@ -4,16 +4,17 @@
 
 package BoxingBox;
 
-import org.bukkit.event.entity.PlayerDeathEvent;
-import org.bukkit.event.EventHandler;
-import Main.Chat;
-import org.bukkit.Location;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
+import org.bukkit.Location;
 import org.bukkit.entity.EntityType;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import Player.Data.PlayerDataHandler;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
+
+import Main.Chat;
+import Player.Data.PlayerDataHandler;
 
 public class BoxWin implements Listener
 {

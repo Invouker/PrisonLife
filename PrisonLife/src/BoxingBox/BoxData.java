@@ -4,13 +4,14 @@
 
 package BoxingBox;
 
-import org.bukkit.World;
-import java.util.Iterator;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.Location;
-import Main.Main;
-import org.bukkit.Bukkit;
 import java.util.HashMap;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.World;
+import org.bukkit.configuration.file.FileConfiguration;
+
+import Main.Main;
 
 public class BoxData
 {

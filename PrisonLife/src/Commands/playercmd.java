@@ -4,28 +4,28 @@
 
 package Commands;
 
-import org.bukkit.World;
-import Items.LoadItem;
-import Cells.CellAsigner;
-import org.bukkit.Location;
 import org.bukkit.Bukkit;
-import ScoreBoard.Prisoner;
+import org.bukkit.Location;
+import org.bukkit.World;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
-import Items.SaveItem;
-import org.bukkit.plugin.java.JavaPlugin;
-import Main.ConfigListener;
-import BoxingBox.JoinBoxListener;
+
 import BoxingBox.BoxData;
+import BoxingBox.JoinBoxListener;
+import Cells.CellAsigner;
+import Items.LoadItem;
+import Items.SaveItem;
 import Main.Chat;
-import Solitary.SolitaryControl;
+import Main.ConfigListener;
+import Main.Main;
 import Main.PrisonType;
 import Needs.NeedsUpdater;
-import Main.Main;
-import org.bukkit.entity.Player;
 import Player.Data.PlayerDataHandler;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.command.CommandExecutor;
+import ScoreBoard.Prisoner;
+import Solitary.SolitaryControl;
 
 public class playercmd implements CommandExecutor
 {

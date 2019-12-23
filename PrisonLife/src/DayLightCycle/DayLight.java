@@ -4,15 +4,15 @@
 
 package DayLightCycle;
 
-import org.bukkit.World;
-import org.bukkit.plugin.Plugin;
-import java.util.Iterator;
-import Main.Main;
-import org.bukkit.entity.Player;
 import org.bukkit.Bukkit;
-import Main.Chat;
+import org.bukkit.World;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
+
+import Main.Chat;
+import Main.Main;
 
 public class DayLight
 {

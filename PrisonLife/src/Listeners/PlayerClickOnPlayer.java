@@ -4,13 +4,14 @@
 
 package Listeners;
 
-import org.bukkit.event.EventHandler;
-import org.bukkit.entity.Entity;
 import org.bukkit.Bukkit;
-import Gui.PlayerGUI;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-import org.bukkit.event.player.PlayerInteractEntityEvent;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
+
+import Gui.PlayerGUI;
 
 public class PlayerClickOnPlayer implements Listener
 {

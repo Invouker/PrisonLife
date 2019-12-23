@@ -4,13 +4,15 @@
 
 package RegionGuard3;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import org.bukkit.World;
 import org.bukkit.entity.Player;
-import java.sql.ResultSet;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import Main.MySQL;
+
 import Main.Main;
+import Main.MySQL;
 
 public class Insert_SQL
 {

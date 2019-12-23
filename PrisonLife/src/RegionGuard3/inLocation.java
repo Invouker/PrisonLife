@@ -4,15 +4,17 @@
 
 package RegionGuard3;
 
-import java.sql.ResultSet;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import org.bukkit.Bukkit;
-import org.bukkit.World;
 import org.bukkit.Location;
-import Main.ZoneVector;
+import org.bukkit.World;
 import org.bukkit.entity.Player;
+
 import Main.MySQL;
+import Main.ZoneVector;
 
 public class inLocation
 {

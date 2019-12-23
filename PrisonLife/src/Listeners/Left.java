@@ -4,27 +4,27 @@
 
 package Listeners;
 
-import org.bukkit.event.EventHandler;
 import org.bukkit.entity.Player;
-import Cells.CellAsigner;
-import Main.Chat;
-import org.bukkit.inventory.Inventory;
-import Items.SaveItem;
-import org.bukkit.plugin.java.JavaPlugin;
-import Main.ConfigListener;
-import Main.Main;
-import Solitary.solitaryCache;
-import Solitary.SolitaryControl;
-import BoxingBox.JoinBoxListener;
-import BoxingBox.BoxData;
-import ScoreBoard.Prisoner;
-import Needs.NeedsUpdater;
-import Main.PrisonType;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
-import Player.Data.PlayerDataHandler;
+import org.bukkit.inventory.Inventory;
+
+import BoxingBox.BoxData;
+import BoxingBox.JoinBoxListener;
+import Cells.CellAsigner;
 import Cells.CellDataProvider;
 import Cells.SignListener;
-import org.bukkit.event.Listener;
+import Items.SaveItem;
+import Main.Chat;
+import Main.ConfigListener;
+import Main.Main;
+import Main.PrisonType;
+import Needs.NeedsUpdater;
+import Player.Data.PlayerDataHandler;
+import ScoreBoard.Prisoner;
+import Solitary.SolitaryControl;
+import Solitary.solitaryCache;
 
 public class Left implements Listener
 {

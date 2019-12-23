@@ -4,14 +4,15 @@
 
 package Basketball;
 
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.EntityType;
-import org.bukkit.Location;
-import org.bukkit.Bukkit;
-import Main.Main;
 import org.bukkit.entity.Slime;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+
+import Main.Main;
 
 public class EntitiyBall
 {

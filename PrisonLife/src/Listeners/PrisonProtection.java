@@ -4,18 +4,19 @@
 
 package Listeners;
 
-import org.bukkit.block.Block;
-import org.bukkit.Material;
-import org.bukkit.event.block.Action;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.block.BlockPlaceEvent;
-import org.bukkit.event.EventHandler;
-import org.bukkit.entity.Player;
-import Main.PrisonType;
 import org.bukkit.GameMode;
-import org.bukkit.event.block.BlockBreakEvent;
-import Player.Data.PlayerDataHandler;
+import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.block.BlockPlaceEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
+
+import Main.PrisonType;
+import Player.Data.PlayerDataHandler;
 
 public class PrisonProtection implements Listener
 {

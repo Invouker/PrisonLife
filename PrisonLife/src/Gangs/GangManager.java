@@ -4,14 +4,15 @@
 
 package Gangs;
 
-import org.bukkit.plugin.Plugin;
-import Main.Main;
-import org.bukkit.scheduler.BukkitRunnable;
-import java.util.Iterator;
-import org.bukkit.scheduler.BukkitTask;
 import java.util.ArrayList;
-import org.bukkit.entity.Player;
 import java.util.HashMap;
+
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
+
+import Main.Main;
 
 public class GangManager
 {

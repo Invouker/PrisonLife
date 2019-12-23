@@ -4,21 +4,21 @@
 
 package DayLightCycle.Listener;
 
-import org.bukkit.plugin.Plugin;
-import Main.Main;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.event.EventHandler;
-import java.util.Iterator;
-import org.bukkit.entity.Player;
 import org.bukkit.block.Block;
-import Main.Chat;
-import DayLightCycle.Gate;
-import DayLightCycle.DoorControler;
-import org.bukkit.event.block.Action;
-import org.bukkit.inventory.EquipmentSlot;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.scheduler.BukkitTask;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.EquipmentSlot;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
+
+import DayLightCycle.DoorControler;
+import DayLightCycle.Gate;
+import Main.Chat;
+import Main.Main;
 
 public class GateListener implements Listener
 {

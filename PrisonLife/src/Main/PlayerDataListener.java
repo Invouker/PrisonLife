@@ -4,10 +4,11 @@
 
 package Main;
 
-import java.util.UUID;
-import java.sql.ResultSet;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.UUID;
+
 import org.bukkit.entity.Player;
 
 public class PlayerDataListener

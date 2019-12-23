@@ -4,15 +4,16 @@
 
 package DayLightCycle;
 
-import Main.Chat;
-import java.util.Iterator;
-import org.bukkit.Material;
-import org.bukkit.block.Block;
-import org.bukkit.World;
-import org.bukkit.Location;
-import org.bukkit.Bukkit;
-import Main.Main;
 import java.util.ArrayList;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.World;
+import org.bukkit.block.Block;
+
+import Main.Chat;
+import Main.Main;
 
 public class DoorControler implements DoorControls
 {

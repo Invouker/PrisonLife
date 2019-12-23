@@ -5,6 +5,7 @@
 package Gangs.Ranks;
 
 import org.bukkit.entity.Player;
+
 import Gangs.Gang;
 
 public interface GRanks

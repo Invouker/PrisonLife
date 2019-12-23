@@ -4,17 +4,18 @@
 
 package Listeners;
 
-import net.citizensnpcs.api.event.NPCLeftClickEvent;
-import org.bukkit.event.EventHandler;
-import org.bukkit.entity.Player;
-import Gui.CookGui;
-import org.bukkit.event.Event;
 import org.bukkit.Bukkit;
-import Events.ChooseTeamEvent;
-import Main.PrisonType;
-import Main.Chat;
-import net.citizensnpcs.api.event.NPCRightClickEvent;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+
+import Events.ChooseTeamEvent;
+import Gui.CookGui;
+import Main.Chat;
+import Main.PrisonType;
+import net.citizensnpcs.api.event.NPCLeftClickEvent;
+import net.citizensnpcs.api.event.NPCRightClickEvent;
 
 public class NPCListener implements Listener
 {

@@ -4,12 +4,13 @@
 
 package DayLightCycle;
 
+import java.util.ArrayList;
+
+import org.bukkit.block.Block;
+import org.bukkit.entity.Player;
+
 import Main.PrisonType;
 import Player.Data.PlayerDataHandler;
-import org.bukkit.entity.Player;
-import java.util.Iterator;
-import org.bukkit.block.Block;
-import java.util.ArrayList;
 
 public class Gate
 {

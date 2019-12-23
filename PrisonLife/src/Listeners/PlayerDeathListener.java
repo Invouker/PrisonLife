@@ -4,21 +4,22 @@
 
 package Listeners;
 
-import Main.Chat;
-import org.bukkit.command.CommandSender;
-import Main.PrisonType;
-import org.bukkit.event.entity.EntityDamageEvent;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.event.EventHandler;
-import org.bukkit.World;
-import org.bukkit.entity.Player;
-import org.bukkit.Location;
 import org.bukkit.Bukkit;
-import Solitary.solitaryCache;
-import Solitary.SolitaryControl;
-import org.bukkit.event.player.PlayerRespawnEvent;
-import Player.Data.PlayerDataHandler;
+import org.bukkit.Location;
+import org.bukkit.World;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.player.PlayerRespawnEvent;
+
+import Main.Chat;
+import Main.PrisonType;
+import Player.Data.PlayerDataHandler;
+import Solitary.SolitaryControl;
+import Solitary.solitaryCache;
 
 public class PlayerDeathListener implements Listener
 {

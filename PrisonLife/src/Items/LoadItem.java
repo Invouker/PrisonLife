@@ -4,15 +4,16 @@
 
 package Items;
 
-import org.bukkit.inventory.meta.ItemMeta;
-import java.util.Iterator;
-import de.tr7zw.itemnbtapi.NBTItem;
-import org.bukkit.enchantments.Enchantment;
-import java.util.List;
-import org.bukkit.Material;
-import Main.ConfigListener;
-import org.bukkit.inventory.ItemStack;
 import java.util.ArrayList;
+import java.util.List;
+
+import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import Main.ConfigListener;
+import de.tr7zw.itemnbtapi.NBTItem;
 
 public class LoadItem
 {

@@ -4,20 +4,21 @@
 
 package Listeners;
 
-import org.bukkit.plugin.Plugin;
-import Main.Main;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.event.EventHandler;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
-import org.bukkit.Material;
-import Utils.Functions;
-import org.bukkit.event.block.BlockBreakEvent;
-import org.bukkit.scheduler.BukkitTask;
-import Player.Data.PlayerDataHandler;
-import Abilities.LevelHandler;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
+
+import Abilities.LevelHandler;
+import Main.Main;
+import Player.Data.PlayerDataHandler;
+import Utils.Functions;
 
 public class MineBlockListener implements Listener
 {

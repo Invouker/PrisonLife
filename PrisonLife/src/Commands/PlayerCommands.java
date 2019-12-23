@@ -4,10 +4,11 @@
 
 package Commands;
 
-import Main.Chat;
-import org.bukkit.entity.Player;
-import org.bukkit.command.CommandSender;
 import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+import Main.Chat;
 
 public class PlayerCommands extends Command
 {

@@ -4,18 +4,19 @@
 
 package Items;
 
-import Main.Chat;
-import java.util.Iterator;
-import org.bukkit.inventory.ItemStack;
-import de.tr7zw.itemnbtapi.NBTItem;
-import java.util.HashMap;
-import org.bukkit.inventory.Inventory;
-import Main.ConfigListener;
 import java.util.ArrayList;
-import org.bukkit.enchantments.Enchantment;
-import java.util.Map;
-import org.bukkit.Material;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+import Main.Chat;
+import Main.ConfigListener;
+import de.tr7zw.itemnbtapi.NBTItem;
 
 public class SaveItem
 {

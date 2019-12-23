@@ -4,15 +4,16 @@
 
 package Main;
 
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.InvalidConfigurationException;
-import org.bukkit.configuration.Configuration;
-import java.io.Reader;
-import org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader;
-import java.io.IOException;
-import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
+import java.io.IOException;
+import java.io.Reader;
+
+import org.bukkit.configuration.Configuration;
+import org.bukkit.configuration.InvalidConfigurationException;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class ConfigListener extends YamlConfiguration
 {

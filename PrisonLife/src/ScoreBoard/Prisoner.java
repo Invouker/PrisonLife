@@ -4,22 +4,23 @@
 
 package ScoreBoard;
 
-import org.bukkit.plugin.Plugin;
-import Main.Main;
-import Main.Chat;
-import org.bukkit.scheduler.BukkitRunnable;
-import java.util.Iterator;
-import org.bukkit.scoreboard.Team;
-import org.bukkit.ChatColor;
-import org.bukkit.scoreboard.DisplaySlot;
-import org.bukkit.Bukkit;
 import java.util.ArrayList;
-import Player.Data.PlayerDataHandler;
-import org.bukkit.scheduler.BukkitTask;
-import org.bukkit.entity.Player;
 import java.util.List;
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
+import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
+import org.bukkit.scoreboard.Team;
+
+import Main.Chat;
+import Main.Main;
+import Player.Data.PlayerDataHandler;
 
 public class Prisoner
 {

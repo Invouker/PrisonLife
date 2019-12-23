@@ -4,8 +4,9 @@
 
 package Items;
 
-import de.tr7zw.itemnbtapi.NBTItem;
 import org.bukkit.inventory.ItemStack;
+
+import de.tr7zw.itemnbtapi.NBTItem;
 
 public class NBTBuilder
 {
