@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/spigot-1.14.4.jar"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/Citizens.jar"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/HolographicDisplays.jar"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/item-nbt-api-plugin-1.8.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/mongo-java-driver-2.13.1.jar"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/ProtocolLib.jar"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/SkinsRestorer.jar"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/SmartInvs-1.2.6.jar"/>
+	<classpathentry kind="lib" path="F:/MCServers/Prison - Life/1.14.4/plugins/APIes/Vault.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
