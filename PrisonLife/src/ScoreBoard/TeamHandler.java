@@ -1,7 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.36
-// 
-
 package ScoreBoard;
 
 import java.util.ArrayList;
@@ -27,10 +23,10 @@ public class TeamHandler {
 	
 	
 	public void registerTeams() {
-		registerTeam("prisoner_red", "�c");
-		registerTeam("prisoner_yellow", "�e");
-		registerTeam("guard", "�9");
-		registerTeam("admin", "�cAdmin ");
+		registerTeam("prisoner_red", "§c");
+		registerTeam("prisoner_yellow", "§e");
+		registerTeam("guard", "§9");
+		registerTeam("admin", "§cAdmin ");
 	}
 	
 	public void registerTeam(String teamName, String prefix) {
@@ -47,20 +43,20 @@ public class TeamHandler {
 	/*
     public static void addScoreboard() {
         final Team red = Bukkit.getScoreboardManager().getMainScoreboard().registerNewTeam("prison_red");
-        red.setPrefix("§c");
+        red.setPrefix("Â§c");
         red.setAllowFriendlyFire(false);
         final Team yellow = Bukkit.getScoreboardManager().getMainScoreboard().registerNewTeam("prison_yellow");
-        yellow.setPrefix("§e");
+        yellow.setPrefix("Â§e");
         yellow.setAllowFriendlyFire(false);
         final Team guard = Bukkit.getScoreboardManager().getMainScoreboard().registerNewTeam("prison_guard");
-        guard.setPrefix("§9");
+        guard.setPrefix("Â§9");
         guard.setAllowFriendlyFire(false);
         final Team admin = Bukkit.getScoreboardManager().getMainScoreboard().registerNewTeam("prison_admin");
-        admin.setPrefix("§a§lAdmin §a");
+        admin.setPrefix("Â§aÂ§lAdmin Â§a");
         final Team box = Bukkit.getScoreboardManager().getMainScoreboard().registerNewTeam("prison_box");
         box.setAllowFriendlyFire(true);
         final Team lobby = Bukkit.getScoreboardManager().getMainScoreboard().registerNewTeam("prison_lobby");
-        lobby.setPrefix("§7§o");
+        lobby.setPrefix("Â§7Â§o");
         lobby.setAllowFriendlyFire(false);
     }
     */
