@@ -43,6 +43,7 @@ public class TeamHandler {
 	}
 	
 	
+	
 	/*
     public static void addScoreboard() {
         final Team red = Bukkit.getScoreboardManager().getMainScoreboard().registerNewTeam("prison_red");
